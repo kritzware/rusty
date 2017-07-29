@@ -2,7 +2,7 @@
 Learning and playing around with Rust
 
 
-Compile: ```$ cargo build```
+Compile and install any new crates: ```$ cargo build```
 
 Run: ```$ ./target/debug/rusty```
 
