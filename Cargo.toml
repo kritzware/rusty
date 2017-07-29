@@ -4,4 +4,4 @@ version = "0.1.0"
 authors = ["kritzware <suspiciouspotato@gmail.com>"]
 
 [dependencies]
-rust-ini = "0.9"
+irc = "0.12.0"

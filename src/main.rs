@@ -1,15 +1,16 @@
-extern crate ini;
-use ini::Ini;
+use std::default::Default;
+
+mod bot;
+use bot::Bot;
+
 
 fn main() {
+    let mut bot = Bot {
+        username: "kappa",
+        oauth: "oauth:wasd",
+        channel: "twitch",
+        ..Default::default()
+    };
 
-    let conf = Ini::load_from_file("config.ini").unwrap();
-
-    let twitch_settings = conf.section(Some("Twitch".to_owned())).unwrap();
-
-    let username = twitch_settings.get("username").unwrap();
-    let password = twitch_settings.get("password").unwrap();
-    let channel = twitch_settings.get("channel").unwrap();
-
-    println!("{:?} {:?} {:?}", username, password, channel);
+    bot.connect();
 }

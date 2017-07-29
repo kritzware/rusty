@@ -1,0 +1,8 @@
+{
+  "nickname": "bot_username",
+  "server": "irc.chat.twitch.tv",
+  "password": "oauth:your_oauth_pass",
+  "port": 443,
+  "use_ssl": true,
+  "channels": ["#channel_to_connect_to"]
+}
